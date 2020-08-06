@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url('../images/123.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+nav{
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15vh;
+	padding: 0 20px;
+}
+nav .logo{
+	
+	line-height: 50px;
+	float: left;
+	
+}
+nav .menu{
+	float: right;
+}
+nav .menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav .menu ul li a{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	text-decoration: none;
+	color: white;
+}
+.toggle{
+	float: right;
+	line-height: 50px;
+	size: 50px;
+	cursor: pointer;
+	display: none;
+}
+nav .menu.showw{
+	left: 0;
+}
+nav .menu ul li a:hover{
+	color: red;
+}
+main{
+	color: white;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.mmm{
+	display: block;
+}
+.mmm h1{
+	font-size: 50px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px black;
+	font-family: 'Indie Flower', cursive;
+}
+.mmm p{
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px black;
+}
+
+.mmm a{
+	text-decoration: none;
+	color: white;
+	padding: 12px 30px;
+	text-transform: uppercase;
+	font: 15px;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.mmm .bt1{
+	background-color: #00b894;
+}
+.mmm .bt2{
+	background-color: white;
+	color: #00b894;
+}
+
+@media (max-width: 900px){
+	nav{
+		padding: 0 20px;
+	}
+	.toggle{
+		display: block;
+	}
+	nav .menu{
+		/*display: none;*/
+		position: absolute;
+		width: 100%;
+		height: 50vh;
+		top: 50px;
+		left: -100%;
+		transition: 0.8s;
+	}
+	nav .menu ul{
+		display: block;
+		text-align: center;
+	}
+
+}

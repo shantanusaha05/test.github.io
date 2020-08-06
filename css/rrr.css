@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url('../images/lee.jpg');
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	scroll-behavior: smooth;
+
+
+
+}
+header{
+	position: absolute;
+	background: transparent;
+    top: 0;
+	left: 0;
+	padding: 0 100px;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+header .logo{
+	color: #fff;
+	float: left;
+	line-height: 50px;
+}
+header nav{
+	float: right;
+} 
+header nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+header nav ul li a{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	text-decoration: none;
+	background: transparent;
+	color: white;
+	transition: 0.5s;
+}
+header nav ul li a:hover{
+	color: red;
+}
+.menu{
+	color: white;
+	float: right;
+	line-height: 50px;
+	cursor: pointer;
+	display: none;
+}
+header nav.act{
+	left: 0;
+}
+
+
+main{
+	width: 100%;
+	top: 50px;
+	background: red;
+}
+.men{
+	color: white;
+}
+.men h1{
+	text-align: center;
+	top: 50%;
+}
+
+@media (max-width: 990px){
+	header{
+		padding: 0 20px;
+	}
+	.menu{
+		display: block;
+
+	}
+	header nav{
+		
+		position: absolute;
+		width: 100%;
+		height: 50vh;
+		background: rgb(0,0,0,0.2);
+		top: 50px;
+		left:-100%;
+		transition: 0.8s;
+	}
+	header nav ul{
+		display: block;
+		text-align: center;
+
+	}
+
+
+
+	
+	
+	
+
+}

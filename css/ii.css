@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+}
+.carousel-inner img{
+	width: 100%;
+	height: 100vh;
+}
+.mynav{
+	background-color:red;
+}
+.part2{
+	animation-delay: 0.5s;
+}
+.about-1{
+
+	animation-timing-function: ease-in-out;
+}
+.about-1 img{
+	width: 600px;
+}
+.part3{
+	animation-delay: 1s;
+}
+.part4{
+	animation-delay: 1.5s;
+}
+.part5{
+	animation-delay: 2s;
+}
+.part6{
+	animation-delay: 2.5s;
+}
+.about-1 , .about-2 , .con ,.con2, .con3 , .imgg , .imgg2 ,#cardone ,#cardtwo,#cardthree{
+	opacity: 0;
+}
+
+.about-1 .animate__animated, .about-2 .animate__animated,.con .animate__animated, .imgg .animate__animated,.imgg2 .animate__animated {
+	opacity: 1;
+}
